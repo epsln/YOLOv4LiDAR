@@ -10,8 +10,8 @@ import cv2
 import tqdm 
 import subprocess 
 
-DSNAME = "annotations/"
-CSVarray = [ "SpatialData/celticCSV_img.csv","SpatialData/kilnsCSV_img.csv", "SpatialData/barrowsCSV_img.csv"]
+DSNAME = "lidarDetect/"
+CSVarray = [ "Data/SpatialData/celticCSV_img.csv","Data/SpatialData/kilnsCSV_img.csv", "Data/SpatialData/barrowsCSV_img.csv"]
 RES = 250 #Resolution of the image/2: 500 will create a 1000x1000 pxl image
 JITTER = 100 #Move the image randomly withing these bounds (pixels)
 

@@ -13,7 +13,7 @@ import csv
 import subprocess 
 
 csvName = "kilnsCSV" #Modify this to use the correct CSV 
-directories = [x[0] for x in os.walk('LiDAR files')]#List all directories 
+directories = [x[0] for x in os.walk('../Data/LiDAR files')]#List all directories 
 
 coordsArray = [] #Array of tuple containing (xMin, xMax, yMin, yMax, imgName) for all the full size images 
 for img in directories[1:]:

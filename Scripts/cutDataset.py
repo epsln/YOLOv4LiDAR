@@ -8,14 +8,14 @@ import math
 
 folderName = 'testImages/'
 
-directories = [x[0] for x in os.walk('LiDAR files')]#List all directories 
+directories = [x[0] for x in os.walk('../Data/LiDAR files')]#List all directories 
 count = 0
 
 textFile = open('testPaths.txt', 'r+')
 
 for img in directories[1:]:
     count += 1
-    imgName = img + "/" + img.split('/')[1]+"_SLRM_clip.tif"
+    imgName = "../Data/LiDAR files/" + img + "/" + img.split('/')[1]+"_SLRM_clip.tif"
     print("Loading ", imgName)
     img = cv2.imread(imgName, cv2.IMREAD_GRAYSCALE)
     for i in range(0, math.floor(img.shape[0]/500)):
