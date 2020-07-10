@@ -6,6 +6,8 @@ yolo:
 	Contains the config files for the yolo 
 memoire:
 	Contains the final report
+Scripts:
+	Contains the scripts 
 
 
 # Automated LiDAR detection using YOLO
@@ -33,21 +35,21 @@ To train, use the following command:
 A good number of epoch would be about 3*Number of Classes. Here, every model was trained for 10K epochs.
 ### Inference on one image
 To run an inference on a single image:
-`./darknet detector test data/obj.data cfg/YOUR_CFG_FILE.cfg backup/YOUR_CFG_FILE_best.weights data/test.jpg`
+		`./darknet detector test data/obj.data cfg/YOUR_CFG_FILE.cfg backup/YOUR_CFG_FILE_best.weights data/test.jpg`
 
 ### Full dataset inference
 To run an inference on all of the tif files, we must first construct a test dataset comprised of cropped 500x500 pixels images. 
 Use the following command to do so:
-`python cutDataset.py`
+		`python cutDataset.py`
 This will create a `testImages/` directory and put all of the cropped images inside, along with creating a text file named `testPaths.txt` containing the path to those images.
 
 Use the following command to infer on the test images
-`./darknet detector test yolo/data/obj.data yolo/cfg/yolov4-custom-GIOU-CV2.cfg yolo/backup/11June2020/yolov4-custom-GIOU-CV2_best.weights -dont_show -ext_output < testPaths.txt > results.txt`
+		`./darknet detector test yolo/data/obj.data yolo/cfg/yolov4-custom-GIOU-CV2.cfg yolo/backup/11June2020/yolov4-custom-GIOU-CV2_best.weights -dont_show -ext_output < testPaths.txt > results.txt`
 
 ### GIS Integration
 Finally, we can use the coordinates of the detected object for use in a GIS. 
 Run the following command:
-`python detectionToCSV.py`
+		`python detectionToCSV.py`
 This will take the result.txt files and create 3 CSV database for each detect objects. Each row of this database contains the polygon coordinates in WKT, the confidence of detection and the class.
 
 #Various notes:
