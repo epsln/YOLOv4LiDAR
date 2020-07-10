@@ -1,0 +1,160 @@
+\documentclass[a4paper, 12pt, titlepage, oneside]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{import}
+\usepackage{subcaption}
+\usepackage[sorting=none, backend=biber]{biblatex}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{lscape}
+\usepackage{mathtools}
+\usepackage{geometry}
+\geometry{a4paper,
+	top=0.75in,
+	bottom=1in,
+	left=1in,
+	right=1in,
+	headheight=14.5pt, % the default is too short
+	heightrounded, % avoids the need of a flexible baselineskip
+} 
+
+\usepackage[toc,acronyms, automake]{glossaries-extra}
+\makeglossaries
+
+\renewcommand*{\glslinkcheckfirsthyperhook}{%
+  \ifglsused{\glslabel}%
+  {%
+    \setkeys{glslink}{hyper=false}%
+  }%
+  {}%
+}
+
+\loadglsentries{sections/glossaire_en}
+\setabbreviationstyle{long-short}
+
+\graphicspath{{images/}}
+\addbibresource{biblio.bib}
+
+%HEADER
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Leiden University - ESIEA}
+\fancyhead[RE,LO]{\leftmark}
+\fancyfoot[CE,CO]{\thepage}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\author{Martin Olivier}
+\title{Research Internship Thesis\\
+\large Automated Detection in Archaeological Geophysical Surveys\\
+\textbf{Leiden University}\\
+	ESIEA
+}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+\chapter{Foreword}
+\import{sections/}{1_foreword.tex}
+\newpage
+
+\chapter{Introduction}
+\import{sections/}{2_introduction.tex}
+\newpage
+
+\part{Context}
+\chapter{Organisation}
+\import{sections/}{3_leiden.tex}
+\newpage
+
+\part{Preliminaries}
+\chapter{General context}%a retravailler
+\import{sections/}{4_context.tex}
+\newpage
+
+\chapter{Elementary concepts}\label{elementaire}
+\import{sections/}{5_elementaire.tex}
+\newpage
+
+\chapter{Metrics}
+\import{sections/}{6_metrics.tex}
+\newpage
+
+\chapter{Challenges}\label{challenges}
+\import{sections/}{7_chall.tex}
+\newpage
+
+\chapter[State of the Art]{State of the Art in Detection in Satellite Imagery}
+\import{sections/}{8_sota.tex}
+\newpage
+
+\chapter[State of the Art]{State of the Art in Detection in Archaeological Remote Sensing}
+\import{sections/}{9_previous.tex}
+\newpage
+
+\chapter{The YOLO Framework}
+\import{sections/}{10_1_yolo.tex}
+\import{sections/}{10_2_yolov4.tex}\label{yolov4}
+\newpage
+
+\part{Implementation and Results}
+\chapter{Dataset}
+\import{sections/}{11_ds.tex}
+\newpage
+
+\chapter{Architecture}
+\import{sections/}{12_archi.tex}
+\newpage
+
+\chapter[Training]{Data augmentation techniques and training regimes}\label{train}
+\import{sections/}{13_1_dataAugm.tex}
+\import{sections/}{13_2_train.tex}
+\newpage
+
+\chapter{Results}
+\import{sections/}{14_results.tex}
+\newpage
+
+\chapter{Discussion}
+\import{sections/}{15_discussion.tex}
+\newpage
+
+\part{Conclusions}
+\chapter{Further Improvements}
+\import{sections/}{16_upgrades.tex}
+\newpage
+
+\chapter{Conclusion}
+\import{sections/}{17_conclusion.tex}
+\newpage
+
+\chapter*{Annexes}
+\import{sections/}{annexe.tex}
+\newpage
+
+\printglossary[title=Acronymes,type=\acronymtype]
+\newpage 
+\printglossary
+\newpage 
+
+\printbibliography[heading=bibintoc]
+\end{document}

@@ -1,0 +1,203 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Foreword}{6}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Introduction}{7}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{I\hspace {1em}Context}{8}{part.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Organisation}{9}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{II\hspace {1em}Preliminaries}{10}{part.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}General context}{11}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Elementary concepts}{12}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}LiDAR}{12}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Archaeology Structures}{12}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Deep Learning}{12}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Metrics}{15}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Type of Errors}{15}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Precision and Recall}{15}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Intersection over Union (IoU)}{16}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Mean Average Precision (mAP) and F1-Score}{17}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}Evaluating a model}{17}{section.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Challenges}{18}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Detection of objects in LiDAR: challenges}{18}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Dataset}{19}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}State of the Art}{20}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}You Only Look Twice\cite {yolt}}{20}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.1}Network Architecture}{20}{subsection.8.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.2}Scale Mitigation}{21}{subsection.8.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.3}Training}{21}{subsection.8.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.4}Results}{21}{subsection.8.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}A Simple and Efficient Network for Small Target Detection\cite {sen}}{22}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2.1}Proposed Modules}{22}{subsection.8.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Dilated Modules}{22}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Passthrough module}{22}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Feature Fusion}{23}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2.2}General Architecture}{23}{subsection.8.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2.3}Results}{24}{subsection.8.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Object Detection in Remote Sensing Images Based on Improved Bounding Box Regression and Multi-Level Features Fusion\cite {qianAl}}{26}{section.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.1}Architecture}{26}{subsection.8.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{General Network Architecture}{26}{section*.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{MLFF}{27}{section*.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.2}Generalized Intersection over Union}{27}{subsection.8.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.3}Bounding Box Regression based on Improved GIoU Loss (IGIoU)}{27}{subsection.8.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.4}Results}{28}{subsection.8.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}A Single Shot Framework with Multi-Scale Feature Fusion for Geospatial Object Detection\cite {zhuang2019}}{29}{section.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.1}Architecture}{29}{subsection.8.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Base Feature Extractor}{29}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Multi-scale feature fusion detector}{29}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Multi-scale feature fusion module}{30}{section*.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Anchors and predictions}{30}{section*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Loss Function}{32}{section*.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Soft Non-Maximum Suppression}{33}{section*.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.2}Results}{33}{subsection.8.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}State of the Art}{35}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.1}Automatic Detection in Magnetostatic Surveys using Convolutional Neural Networks}{35}{section.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.2}Learning To Look At LiDAR}{35}{section.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}The YOLO Framework}{36}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}General Principle}{36}{section.10.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}Network design and Architecture}{36}{section.10.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.3}YOLOv4}{38}{section.10.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.1}General Architecture of a Object Detector}{38}{subsection.10.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.2}Bag of Freebies}{39}{subsection.10.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.3}Bag Of Specials}{40}{subsection.10.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.4}Additional Improvements}{41}{subsection.10.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.5}YOLOv4 Architecture}{43}{subsection.10.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.6}Results}{44}{subsection.10.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Influence of features on Classifier training}{44}{section*.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Influence of features on the Detector training}{44}{section*.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.7}Influence of different backbones and pre-trained weights on the detector}{46}{subsection.10.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Influence of mini-batch size on detector training}{46}{section*.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{III\hspace {1em}Implementation and Results}{48}{part.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}Dataset}{49}{chapter.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.1}Dataset creation}{49}{section.11.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1.1}Cropping Images}{49}{subsection.11.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1.2}Annotations}{50}{subsection.11.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {12}Architecture}{52}{chapter.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.1}Feature Fusion}{52}{section.12.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.2}Backbone and activation}{52}{section.12.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.3}Activation Functions}{53}{section.12.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.3.1}Scaled Exponential Linear Unit}{53}{subsection.12.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.3.2}Swish}{54}{subsection.12.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.3.3}Mish}{55}{subsection.12.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.4}Dual Scale Detectors}{55}{section.12.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.5}Multi-scale Feature Fusion}{55}{section.12.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.6}Receptive Field Improvements}{57}{section.12.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.7}Attention Modules}{58}{section.12.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.8}Post-processing}{58}{section.12.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.9}List of all the possible testing arrangements}{58}{section.12.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.10}YOLOv4}{59}{section.12.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {13}Training}{60}{chapter.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.1}Data Augmentations}{60}{section.13.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {13.1.1}Image Modification}{60}{subsection.13.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {13.1.2}Regularization and Normalization}{61}{subsection.13.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.2}Self Adversarial Training}{61}{section.13.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.3}Loss Systems}{61}{section.13.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {13.3.1}GIoU, DIoU and CIoU}{62}{subsection.13.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {13.3.2}Loss flooding}{63}{subsection.13.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.4}Training methodology}{64}{section.13.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {14}Results}{65}{chapter.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {15}Discussion}{66}{chapter.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{IV\hspace {1em}Conclusions}{67}{part.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {16}Further Improvements}{68}{chapter.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {17}Conclusion}{69}{chapter.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acronymes}{71}{section*.60}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Glossary}{73}{section*.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{74}{chapter*.64}

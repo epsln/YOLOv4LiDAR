@@ -1,0 +1,64 @@
+%Lien Arxiv : https://arxiv.org/pdf/1805.09512.pdf
+%Il existe également une nouvelle archi, ecrite par le meme auteur: https://arxiv.org/pdf/1809.09978.pdf apparement meilleure, mais l'article n'apporte pas vriament de détails sur l'archi (a creuser ?)
+
+This article present a detection pipeline that supposedly supercedes previous work by the same author; YOLT\cite{yolt} presented in section~\ref{yolt}. The author introduces a singular framework using not only YOLT but also various other detection models, such as SSD\cite{ssd}, Faster-RCNN\cite{FasterRCNN} and R-FCN\cite{rfcn}. This approach allows the comparison of those different models in the context of object detection in satellite imagery.
+\subsection{Network Architecture and Training Method}
+Since the author uses a multitude of different models, we will give only the modifications and parameters chosen for each model.
+
+\subsubsection{YOLO}
+A standard YOLOv2\cite{yolov9000} was used with a $13 \times 13$ output grid. Each layer uses batch normalization with a leaky ReLU activation. The training was done using an initial learning rate of 0.001, a weight decay of 0.0005 and a momentum of 0.9 using Stochastic Gradient Descent with a batch size of 16 for 60K iterations.
+
+\subsubsection{YOLT}
+The parameters used are similar than the one used in the original paper\cite{yolt}: model coarseness was reduced by only downsampling by a factor of 16 instead of 32 used in the standard YOLO model. This yield a $26 \times 26$ prediction grid. This helps to detect small, densely packed object, often seen in satellite imagery.
+
+A passthrough layer was also included to help detect small objects, that concatenates the final $52 \times 52$ layer onto the last convolutional layer. 
+
+Training was done using the same hyperparameters used in the YOLO implementation.
+
+\subsubsection{SSD}
+The SSD implementation was done similarly as the one described in a paper comparing the speed and accuracy of various object detectors by Huang et Al\cite{huangAlObjDetectors}. The author also experiments with two different backbone networks: Inception V2 \cite{inceptionV2} and MobileNet \cite{mobileNet}.
+
+Training was done using an initial learning rate of 0.004 and a decay rate of 0.95 for 30K iterations with a batch size of 16. The "high resolution" settings were used, using $600 \times 600$ pixel images sizes.
+
+\subsubsection{Faster-RCNN}
+Again, the implementation of \cite{huangAlObjDetectors} was used, and uses the ResNet 101 \cite{resNet}. The author also uses the "high resolution' settings, using $600 \times 600$ pixel image sizes. 
+
+Training is done with a batch size of 1 and an initial learning rate of 0.0001. The author does not specify the amount of iterations done.
+\subsubsection{R-FCN}
+Again, the same hyperparameters as the ones used in \cite{huangAlObjDetectors} are used. The backbone is also a ResNet 101 architecture, with the same parameters as the one used in Faster-RCNN
+
+\subsection{Training and Testing Procedure}
+\subsubsection{Data and Preprocessing}
+The datasets used are the same as in the original YOLT papers, and a more complete description can be found in section \ref{yolt}.
+
+Training was done on a similar timescale, or about 24-48 hours for each of the model tested, and followed the same principle as the original YOLT pipeline, where for each architecture two separate models were trained, one designed for vehicles (or small scale objects in general) and the other for airports (or large scale objects).
+
+Testing was done using a similar procedure as the one used in the original YOLT paper, and a more complete description can also be found in section \ref{yolt}.
+
+\subsection{Results}
+The classifer was run a two different scale, 200m and 5000m. The first scale is designed for vehicles while the larger scale is optimzied for larger infrastructure. 
+
+The validation image is broken into appropriately sized segments and passed onto the appropriate classifier. Results from both detectors are combined into one final image, and overlapping detection are merged using Non Maximal Suppresssion.
+
+Results for R-FCN and Faster-RCNN are poor, as it would seem that both models struggle in detecting objects with different sizes, and are very sensible to background conditions. Even with much more longer training runs, up to 300K iterations, different input image size, first stage stride, and batch size, no marked improvement is made over the original hyperparameters described in \cite{huangAlObjDetectors}.
+
+Airport Detection is poor for all models. The author argues that this is likely a result of the small training set size for airports, but that YOLO/YOLT do perform better on those objects.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{lll}
+	\toprule
+	Architecture          & mAP           & Inference Rate $(km^2/s)$ \\\midrule
+Faster RCNN ResNet101 & 0.23          & 0.09                    \\
+RFCN ResNet101        & 0.13          & 0.17                    \\
+SSD Inception         & 0.41          & 0.22                    \\
+SSD MobileNet         & 0.34          & 0.32                    \\
+YOLO                  & 0.56          & 0.42                    \\
+YOLT                  & \textbf{0.58} & \textbf{0.44}          \\\bottomrule
+\end{tabular}
+	\caption[Precision comparison of YOLT versus traditional detection pipelines]{Precision comparison of the different models tested. Inference speed is also presented}
+\label{tab:SIMRDWNPerf}
+\end{table}
+
+Table \ref{tab:SIMRDWNPerf} shows a performance comparison between YOLT and the other tested algorithms. \textbf{YOLT obtains the best performance, both in terms of mAP and inference speed.}
+

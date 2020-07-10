@@ -1,0 +1,26 @@
+A detailled SotA have already been done, and is available as its own document. For the sake of brievity, we will not include its entirety in this section, but we will only highlight the major contribution of each paper.
+
+\section{You Only Look Twice\cite{yolt}}\label{yolt}
+\import{sections/}{etten1.tex}
+\newpage
+
+%\section{Satellite Imagery Multiscale Rapid Detection with Windowed Networks\cite{Etten2019}}
+%\import{sections/}{etten2.tex}
+%\newpage
+
+\section{A Simple and Efficient Network for Small Target Detection\cite{sen}}
+\import{sections/}{juAl.tex}
+\newpage
+
+\section{Object Detection in Remote Sensing Images Based on Improved Bounding Box Regression and Multi-Level Features Fusion\cite{qianAl}}\label{qianAl}
+\import{sections/}{qianAl.tex}
+\newpage
+
+
+%TODO: Rework this !
+\section{A Single Shot Framework with Multi-Scale Feature Fusion for Geospatial Object Detection\cite{zhuang2019}}\label{ssd}
+\import{sections/}{zhuangAl.tex}
+
+Using lessons taken from those paper, we can hope to create a network that is fit for detection in \gls{lidar} surveys. However, we should emphasize that there are notable differences between satellite imagery and \gls{lidar} surveys. \gls{lidar} surveys suffer more from the problem of occlusion, where objects are partially obscured, which renders detection and classification harder. As stated in Section~\ref{challenges}, geomagnetic surveys in general are harder to analyze, and object within can be harder to detect because they don't emit the same kind of response as with visible light. 
+
+The main lessons we need to take from the satellite imagery detection methods are their way of addressing the issue of scale. Surveys are often very high resolution, cover large swaths of terrain, but the object we want to detect are often very small both in absolute size and relative size to the image\footnote{A barrow, a type of object in our dataset is around $50 \times 50$ pixels and the raw input image is $13140 \times 10290$. A barrow is therefore about $2\times10^{-4}$ of the original image.}, and those issues arise both in satellite imagery and Geophysics. Most of the improvements here can be categorised into 3 main categories: an increase in raw compute performance, an increase in bounding box accuracy and improvements in earlier layer feature reuse. 

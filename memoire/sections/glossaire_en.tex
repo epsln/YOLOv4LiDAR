@@ -1,0 +1,190 @@
+\newacronym{snr}{SNR}{Signal-To-Noise Ratio}
+\newacronym{dem}{DEM}{Digital Elevation Model}
+\newacronym{lidar}{LiDAR}{LIght Detection And Ranging}
+\newacronym{iou}{IoU}{Intersection Over Union}
+\newacronym{giou}{GIoU}{Generalized Intersection Over Union}
+\newacronym{diou}{dIoU}{Distance Intersection Over Union}
+\newacronym{ciou}{cIoU}{Complete Intersection Over Union}
+\newacronym{selu}{SELU}{Scaled Exponential Linear Unit}
+\newacronym{map}{mAP}{Mean Average Precision}
+\newacronym{ap}{AP}{Average Precision}
+\newacronym{ml}{ML}{Machine Learning}
+\newacronym{gpu}{GPU}{Graphics Processing Unit}
+\newacronym{yolo}{YOLO}{You Only Look Once}
+\newacronym{mse}{MSE}{Mean Squared Error}
+\newacronym{mlff}{MLFF}{Multi Layer Feature Fusion}
+\newacronym{pan}{PAN}{Path Aggregation Network}
+\newacronym{fpn}{FPN}{Feature Pyramid Network}
+\newacronym{fnn}{FNN}{Feedforward Neural Network}
+\newacronym{bof}{BoF}{Bag of Freebies}
+\newacronym{bos}{BoS}{Bag of Specials}
+\newacronym{sam}{SAM}{Spatial Attention Module}
+\newacronym{svm}{SVM}{Support Vector Machine}
+\newacronym{poe}{PoE}{Power over Ethernet}
+\newacronym{dem}{DEM}{Digital Elevation Model}
+\newacronym{crnn}{CRNN}{Convolutional Recurrent Neural Network}
+\newacronym{fft}{FFT}{Fast Fourier Transform}
+\newacronym{spp}{SPP}{Spatial Pyramidal Pooling}
+\newacronym{stft}{STFT}{Short Time Fourier Transform}
+\newacronym{mfcc}{MFCC}{Mel-frequency cepstrum coefficient}
+\newacronym{acr}{ACR}{Auto-correlation}
+\newacronym{gcc-phat}{GCC-PHAT}{Generalized Cross Correlation with Phase Transform}
+\newacronym{tdoa}{TDOA}{Time Difference of Arrival}
+\newacronym{sed}{SED}{Sound Event Detection}
+\newacronym{rsed}{RSED}{Rare Sound Event Detection}
+\newacronym{er}{ER}{Error Rate}
+\newacronym{relu}{ReLU}{Rectified Linear Unit}
+\newacronym{fc}{FC}{Fully connected}
+\newacronym{lstm}{LSTM}{Long Short Term Memory}
+\newacronym{rnn}{RNN}{Recurent Neural Network}
+\newacronym{dnn}{DNN}{Deep Neural Network}
+\newacronym{rpn}{RPN}{Region Proposal Network}
+\newacronym{nms}{NMS}{Non-Maximum Suppression}
+\newacronym{roi}{RoI}{Region of Interest}
+\newacronym{gru}{GRU}{Gated Reccurent Unit}
+\newacronym{mlp}{MLP}{Multi Layer Perceptron}
+\newacronym{cim}{CIM}{Centre d'Ingénierie du Matériel}
+\newacronym{tgv}{TGV}{Train Grande Vitesse}
+\newacronym{ter}{TER}{Transport Express Régional}
+
+\newglossaryentry{hyperparameter}{
+	name=hyperparameter,
+	description={An hyperparameter is a parameter whose value is used to control the model behavior. As opposed to weights, those values are not learned during the training process.\cite[p.117]{Goodfellow2016}}
+} 
+
+\newglossaryentry{weights}{
+	name=weights,
+	description={A weight is a value that is learned during the training process.\cite[p.14]{Goodfellow2016}}
+} 
+
+\newglossaryentry{cnn}{
+	name=CNN,
+	description={Convolutional Neural Network. Type of neural network, who learns weights for matrices who will be convoluted and produces feature maps. Generaly, those feature maps will be convoluted upon by other convolutional layers. }
+}
+
+\newglossaryentry{gis}{
+	name=GIS,
+	description={Geographical Information System. Type of specialised software created to deal with maps and geographical data}
+}
+
+\newglossaryentry{feature}{
+	name=feature,
+	description={Une feature est une représentation de la donnée. Cela peut être une représentation extraite "manuellement", comme une MFCC ou un spectrogramme, comme cela peut être une représentation apprise par le réseau. Dans ce cas, la représentation sera un point dans \textit{l'espace latent} du réseau}
+}
+
+\newglossaryentry{frame}{
+	name=frame,
+	description={Une frame est un court instant de temps. Il s'agit souvent ici d'un seul échantillon temporel dans un spectrogramme, d'une durée $\approx 20-40$ms}
+}
+
+\newglossaryentry{Signal To Noise Ratio}{
+	name=Signal-To-Noise Ratio,
+	description={Ratio du signal contre le bruit, mesure du niveau de bruit dans un signal. Plus celui ci est petit, plus le signal est clair. A l'inverse, plus celui ci est grand, plus le signal est bruité}
+}
+
+\newglossaryentry{stride}{
+	name=stride,
+	description={Décallage. Plutôt que de convoluer (par exemple) pixel par pixel, on peut simplement sauter des pixels. Cette méthode permet d'épargner des calculs, le réseau ayant moins de convolutions a effectuer au total. Le stride va également réduire la dimension de sortie de l'opération, ce qui peut s'avérer utile. Le stride peut être différent selon les axes et ne s'applique pas uniquement aux convolutions}
+}
+
+\newglossaryentry{feature-map}{
+	name=feature-map,
+	description={Une feature map est la matrice obtenue après convolution par module de convolution. On aura autant de feature-map que de modules dans une couche de convolution}
+}
+
+\newglossaryentry{max-pooling}{
+	name=max-pooling,
+	description={ Opération mathématiques prenant une matrice de taille $N \times M$, et qui choisit la valeur la plus élévée de cette matrice. On applique un maxpooling pour réduire la dimension des données produite par une couche de convolution, et choisir l'élément le plus "représentatif"}
+}
+
+\newglossaryentry{batch-normalisation}{
+	name=batch-normalisation,
+	description={Pratique consistant à normaliser un \textit{batch} de donnée en leur donnant une moyenne proche de 0 et une variance proche de 1. Permet de stabiliser numériquement l'entrainement}
+}
+
+\newglossaryentry{dropout}{
+	name=dropout,
+	description={Technique de régularisation de réseau neuronaux, développé par Hinton et al\cite{HintonDropout}. Pour tenter de limiter l'overfitting d'un réseau neuronal, le dropout consiste à désactiver certains neurones aléatoirement et continuer l'apprentissage. Le taux de dropout est donc la probabilité de désactiver un neurone}
+}
+
+\newglossaryentry{loss/perte}{
+	name=loss/perte,
+	description={}
+}
+
+\newglossaryentry{Descente de gradient}{
+	name=Descente de gradient,
+	description={}
+}
+
+\newglossaryentry{rétropropagation}{
+	name=rétropropagation,
+	description={Technique d'apprentissage de réseau neuronal, où les poids d'une couche sont récursivement modifié à partir de la couche supérieure}
+}
+
+
+\newglossaryentry{finetune}{
+	name=finetune,
+	description={Le finetuning consiste à effectuer de très légères modifications dans le réseau afin d'obtenir de meilleurs résultats. On modifiera par exemple la taille des batchs lors de l'apprentissage, la taille des filtres, où leur strides. On le pratique après avoir entrainé une première version du réseau qui sert de prototype et donne une idée des résultats que l'approche peut obtenir}
+}
+
+\newglossaryentry{ErrorRate}{
+	name=Error Rate,
+	description={Voir définition (\ref{ErrorRate})}
+}
+
+\newglossaryentry{F-score}{
+	name=F-score,
+	description={Voir définition (\ref{fscore})}
+}
+
+\newglossaryentry{softmax}{
+	name=softmax,
+	description={Opération mathématique qui permet d'obtenir une distribution de probabilités normalisée}
+} 
+\newglossaryentry{batch}{
+	name=batch,
+	description={Sous-ensemble du dataset, utilisé pour accélérer l'entrainement. Plutot que d'utiliser chaque données individuellement et mettre à jour les poids du réseau a chaque échantillon, on peut simplement prendre une grape de ceux ci, et effectuer la mise a jour après entrainement sur cette grape}
+} 
+
+\newglossaryentry{overfit}{
+	name=overfit,
+	description={When the capacity for representation of a model is too big in relation to the size of the dataset; either because the model has too much parameters or because the dataset is too small. In those cases, the model can "learn by heart" the training data and it's capacity for generalization will be affected. Overfitting will usually manifest itself with a very good accuracy on the training dataset, but a poor accuracy on the test dataset. See Section\ref{overfit} for a more in depth explanation.
+} 
+
+\newglossaryentry{adam}{
+	name=ADAM,
+	description={Optimizer designed for the training of neural networks. Proposed by Kingma et Al.\cite{AdamOpti}. Permet de grandement accélerer l'entrainement en contrepartie d'une précision inférieure a une descente de gradient stochastique classique}
+} 
+
+\newglossaryentry{timestep}{
+	name=timestep,
+	description={Court instant de temps: similaire a frame}
+} 
+
+\newglossaryentry{crossentropy}{
+	name=cross entropy,
+	description={Type de perte se basant le log de la différence entre le label prédit et le label vérité}
+}
+
+\newglossaryentry{onehot}{
+	name=One Hot,
+	description={Type d'encodage de label ou chaque dimension correspond a une classe différente. Si l'exemple fait partie de la classe, on met un 1 dans la case correspondate, sinon on met 0. Par exemple, un échantillon d'un dataset avec 3 classes encodées en One Hot aura la forme $[0, 1, 0]$}
+} 
+
+\newglossaryentry{epoch}{
+	name=epoch,
+	description={Une epoch corresponds à utiliser l'intégralité des données du dataset. Une fois qu'une epoch est terminée, on calcule généralement les statistiques de précision/accuracy sur le dataset de test. N epochs correspondent donc a boucler N fois sur tout le dataset}
+}
+
+\newglossaryentry{deeplearning}{
+	name=Deep Learning,
+	description={Ensemble de techniques utilisant des réseaux de neurones pour effectuer des taches de Machine Learning. On entraine ces réseaux a effectuer ces taches en leur présentant des grandes quantités d'exemples et leur réponses, et on modifie leurs paramètres (parfois au nombres de plusieurs millions) pour réduire une fonction de perte. Cette fonction de perte indique a quel point le réseau effectue correctemement la tache demandé.}
+} 
+
+\newglossaryentry{backprop}{
+	name=backpropagation,
+	description={Backpropagation is a learning technique that allows for a computation efficient calculation of the gradient of the loss function. Backpropagation uses the chain rules to compute the gradient each layer at a time, starting from the last layer.\cite[p.197]{Goodfellow2016}}
+}
+
+

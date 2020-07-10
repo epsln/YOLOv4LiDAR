@@ -1,0 +1,41 @@
+%Lien Arxiv : https://arxiv.org/pdf/1805.09512.pdf
+
+You Only Look Twice is a model developped by Adam Van Etten, and is focussing on rapid multi scale detection for satellite imagery. This approach uses a modified YOLO\cite{yolov3} framework. A new backbone architecture is used, with finer grained features and a denser final grid, to better detect the very small objects found in satellite imagery. This approach also uses an ensemble method, where multiple networks are run simultaneously at different scales. Finally, the problem of large input image size is mitigated by partitioning the images using a sliding window.
+
+This network was trained on small snippets or segments of large images from 3 differents sources to detect 5 classes of objects: cars, airplanes, boats,building footprints and airports.
+\subsection{Network Architecture}
+The YOLO network has been modified to better detect heavily packed objects, often found in satellite imagery. The YOLT network takes as input a $416 \times 416$ pixel image, which it downscales 16 times. The network outputs a $26 \times 26$ prediction grid, which is much finer than the $7 \times 7$ prediction grid offered by a "regular" YOLO network. \textbf{This finer prediction grid is what allows the network to detect densely packed objects.}
+
+
+A passthrough layer is also used to pass coarse features from the earlier and high resolution layers to the final low resolution layers. This passthrough layer is similar to the identity layer used in ResNet\cite{resNet} and was first used in YOLOv9000\cite{yolov9000}.
+ 
+Each layer uses Batch Normalization\cite{batchNorm} and uses the leaky-ReLU activation\cite{leakyRelu}, except for the last layer, which uses a linear activation. This final layer provides the predictions for the bounding boxes and class.
+
+\subsection{Scale Mitigation}
+\textbf{The author uses two different detectors on the input images running simultaneously}. One is trained to detect small scale objects, like vehicles and building, while the other is trained to detect airports and large structures. The size on the input images of these detector is different, as one takes in 200 meters segments, while the other uses 2000 meters segments. 
+
+As there is about 100 times less 2000 meters segment in the original images as there is 200 meters segments, the large scale network runs much less often than the small scale network. This limits the reduction of inference speed that running two detectors would do.
+
+\subsection{Training}
+%Ref on the training sources 
+The author uses training data from three sources: DigitalGlobe satellites, Planet satellites and aerial platforms. The author also uses some data augmentation techniques, with random rescaling and rotations to get more examples, as the dataset for some classes such as airports or airplanes is small.
+
+\subsection{Results}
+It should be noted that the author initial tried to train only one detector and obtained very poor results, due to the large scale difference between some of the objects. The results presented here are the one using the two detector approach.
+
+Table \ref{tab:yoltResults} shows the F1 Score for each class. It should be noted that while the absolute value of the F1 Score for the building class is lower in comparison the other classes, the best contestant in the \href{https://spacenetchallenge.github.io/}{SpaceNet} Challenge 2, where the contestants where asked to detect building outlines using the same dataset as the one used here obtained a F1-Score of $0.69$. This puts this detector in the Top-3.
+\begin{table}[h!]
+\centering
+\begin{tabular}{ll}
+Object Class & F1 Score        \\ \hline
+Car          & $0.90 \pm 0.09$ \\
+Airplane     & $0.87 \pm 0.08$ \\
+Boat         & $0.82 \pm 0.07$ \\
+Building     & $0.61 \pm 0.15$ \\
+Airport      & $0.91 \pm 0.14$ \\ \bottomrule
+\end{tabular}
+\caption{YOLT Detection performance on all classes}
+\label{tab:yoltResults}
+\end{table}
+
+The network is also very fast, being able to analyze $32 km^2/min$ for the small scale network and $6000 km^2/min$ for the large scale network.

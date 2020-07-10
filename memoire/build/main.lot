@@ -1,0 +1,51 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.1}{\ignorespaces YOLT Detection performance on all classes\relax }}{21}{table.caption.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.2}{\ignorespaces Comparative results of FPS, BFLOPs and Model Size with all tested algorithms. BFLOPS refer to the number of billions of floating points operations needed to calculate the prediction.\relax }}{24}{table.caption.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.3}{\ignorespaces Comparison of the ODRSI against four existing detection framework on the NWPU VHR-10\relax }}{28}{table.caption.19}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {10.1}{\ignorespaces Impact of Bag of Freebies and different activation on the CSPResNext-50 Classifier. Baseline is shown on the first row. Results which are better than the baseline are shown in bold\relax }}{44}{table.caption.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {10.2}{\ignorespaces Impact of Bag of Freebies and Mish on the CSPDarknet-53 Classifier. Baseline is shown on the first row. Results which are better than the baseline are shown in bold\relax }}{44}{table.caption.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {10.3}{\ignorespaces Ablation Studies of Bag-of-Freebies using CSPResNeXt50-PANet-SPP with $512 \times 512$ input. Baseline is shown on the first row. Results better than baseline are shown in bold.\relax }}{45}{table.caption.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {10.4}{\ignorespaces Comparison study of different classifier pre trained weights for detector trainings.\relax }}{46}{table.caption.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {10.5}{\ignorespaces Comparison study of different mini-batch size for detector training.\relax }}{46}{table.caption.45}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

@@ -1,0 +1,87 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Example of overfitting on a classification task}}{13}{figure.caption.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Gradient Descent}}{14}{figure.caption.5}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Intersection over Union}}{17}{figure.caption.7}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.1}{\ignorespaces A natural image \textit {versus} a LiDAR survey\relax }}{18}{figure.caption.8}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Dilated Convolution Example\relax }}{22}{figure.caption.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces General Architecture for the Simple and Efficient Network for Small Target Detection}}{23}{figure.caption.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces General Architecture of the ODRSI}}{26}{figure.caption.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Architecture of the Darknet 53, used as a base network for features extraction in the Single-Shot Object Detection Framework}}{29}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Anchors and location predictions}}{32}{figure.caption.27}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.1}{\ignorespaces YOLO model}}{37}{figure.caption.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Architecture of the backbone of the YOLO Framework}}{37}{figure.caption.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.3}{\ignorespaces General Architecture of an Object Detector\relax }}{38}{figure.caption.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Some data augmentation techniques\relax }}{40}{figure.caption.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.7}{\ignorespaces SAM and its YOLO modification\relax }}{43}{figure.caption.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.8}{\ignorespaces PAN and its YOLO modification\relax }}{43}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Functionnal Diagram of the createAnnotation script}}{50}{figure.caption.46}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12.2}{\ignorespaces Scaled Exponential Linear Unit (SELU) Activation Function\relax }}{54}{figure.12.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12.3}{\ignorespaces The Swish activation function, with different values of $\beta $\relax }}{54}{figure.caption.49}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12.4}{\ignorespaces The mish activation function\relax }}{55}{figure.caption.50}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12.5}{\ignorespaces Feature Fusion in Zhuang \textit {et al.}}}{56}{figure.caption.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12.6}{\ignorespaces Architecture of Qian \textit {et al.}}}{57}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12.7}{\ignorespaces PAN and its YOLO modification\relax }}{57}{figure.caption.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12.9}{\ignorespaces SAM and its YOLO modification\relax }}{58}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {13.1}{\ignorespaces Regularisation by dropping: random drops \textit {v.s.} DropBlock}}{61}{figure.caption.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {13.2}{\ignorespaces Bounding boxes overlap cases}}{62}{figure.caption.57}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {13.3}{\ignorespaces Loss flooding}}{64}{figure.caption.58}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

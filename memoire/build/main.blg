@@ -1,0 +1,24 @@
+[1] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[1] Config.pm:357> INFO - Logfile is 'build//main.blg'
+[79] biber:303> INFO - === Wed Jun 24, 2020, 15:26:31
+[101] Biber.pm:360> INFO - Reading 'build//main.bcf'
+[210] Biber.pm:836> INFO - Found 98 citekeys in bib section 0
+[226] Biber.pm:3671> INFO - Processing section 0
+[240] Biber.pm:3841> INFO - Looking for bibtex format file 'biblio.bib' for section 0
+[250] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[272] bibtex.pm:1281> INFO - Found BibTeX data source 'biblio.bib'
+[284] Utils.pm:164> WARN - Duplicate entry key: 'vgg' in file 'biblio.bib', skipping ...
+[308] Utils.pm:164> WARN - month field 'September' in entry 'CakirCRNN' is not an integer - this will probably not sort properly.
+[438] Utils.pm:164> WARN - month field '17--19 Jun' in entry 'dropConnect' is not an integer - this will probably not sort properly.
+[453] Utils.pm:164> WARN - month field 'Oct' in entry 'focalLoss' is not an integer - this will probably not sort properly.
+[494] Utils.pm:164> WARN - BibTeX subsystem: /tmp/RvbF2sNi8U/biblio.bib_7934.utf8, line 9, warning: 252 characters of junk seen at toplevel
+[496] Utils.pm:164> WARN - I didn't find a database entry for 'yolo' (section 0)
+[496] Utils.pm:164> WARN - I didn't find a database entry for 'wouter2019' (section 0)
+[496] Utils.pm:164> WARN - I didn't find a database entry for 'shorten2019' (section 0)
+[608] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[609] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[609] Biber.pm:3500> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[609] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[683] bbl.pm:608> INFO - Writing 'build//main.bbl' with encoding 'UTF-8'
+[703] bbl.pm:712> INFO - Output to build//main.bbl
+[703] Biber.pm:110> INFO - WARNINGS: 8
