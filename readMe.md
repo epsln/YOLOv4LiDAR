@@ -22,6 +22,12 @@ Using the CSV databases containing the images in which the objects are located, 
 
 The name and size of the image can be modified in the code. By default, the dataset is named lidarDetect, with image sized 500x500 pixels. 
 
+### Config Files
+The config file for the model used in the article are `yolov4-custom-GIOU-CV2-DNMS.cfg`
+
+### Weights
+The weights for the model used in the article are available on this Google Drive.
+
 ### Darknet Compilation
 Compile the latest darknet YOLOv4 included in the dataset. By default, this version does not include CV2 integration. Arch User Repositories offers an already compiled YOLOv4 that does include CV2. 
 ### Training
@@ -54,4 +60,4 @@ This will take the result.txt files and create 3 CSV database for each detect ob
 
 #Various notes:
 	The reference on the SIG is flipped on the y axis compared to the image (top down -> down top)
-	The dataset is not completely clean: for example there are multiple instances of barrows being covered twice or more. This WILL cause issues down the line. Need to clean this, but hard to compare between CSV and GIS, also hard to automatise because of natural occlusion issues...  
+	The dataset is not completely clean: for example there are multiple instances of barrows being covered twice or more. 
